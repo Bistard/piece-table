@@ -208,7 +208,7 @@ class PieceNode implements IPieceNode {
  * @internal
  * The null node as a leaf.
  */
-const NULL_NODE = new PieceNode(null!, RBColor.BLACK);
+export const NULL_NODE = new PieceNode(null!, RBColor.BLACK);
 NULL_NODE.parent = NULL_NODE;
 NULL_NODE.left = NULL_NODE;
 NULL_NODE.right = NULL_NODE;
@@ -2227,14 +2227,4 @@ export class PieceTable implements IPieceTable {
 			return end.lineNumber - start.lineNumber;
 		}
     }
-}
-
-/**
- * @namespace PieceTableInternal Should ONLY be used in `pieceTable.test.ts`. 
- */
-export namespace PieceTableInternal {
-
-    /** @warn Should ONLY be used in `pieceTable.test.ts`. */
-    export const NULL = NULL_NODE;
-
 }
