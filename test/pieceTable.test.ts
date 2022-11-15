@@ -15,10 +15,10 @@ class TestPieceTableBuilder extends PieceTableBuilder {
     }
 }
 
-function buildPieceTable(values: string[], normalizationEOL?: boolean, defaultEOL?: EndOfLineType, force?: boolean): IPieceTable {
+function buildPieceTable(contents: string[], normalizationEOL?: boolean, defaultEOL?: EndOfLineType, force?: boolean): IPieceTable {
     const builder = new TestPieceTableBuilder();
-    for (const value of values) {
-        builder.receive(value);
+    for (const content of contents) {
+        builder.receive(content);
     }
     builder.build();
     return builder.create(normalizationEOL, defaultEOL, force);

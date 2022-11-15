@@ -37,9 +37,9 @@ export interface IPieceTableBuilder {
      * @param force If force to replace all the link breaking with the 
      *              defaultEOL.
      * 
-     * @default false normalizationEOL
-     * @default EndOfLineType.LF defaultEOL
-     * @default false force
+     * @default normalizationEOL false 
+     * @default defaultEOL {@link EndOfLineType.LF}
+     * @default force false
      * 
      * @throws An exception will be thrown if the caller creates twice or did 
      * not build yet.
