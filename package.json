@@ -1,0 +1,26 @@
+{
+  "name": "piece-table",
+  "version": "1.0.0",
+  "description": "A TypeScript implementation of the piece table data structure with red-black tree, multiple buffered and optimized by for line model, inspired by VSCode.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Bistard/piece-table.git"
+  },
+  "keywords": [
+    "piece-table",
+    "javascript",
+    "typescript",
+    "vscode",
+    "data-structure"
+  ],
+  "author": "Chris Li",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Bistard/piece-table/issues"
+  },
+  "homepage": "https://github.com/Bistard/piece-table#readme"
+}
